@@ -13,9 +13,8 @@ from dotenv import load_dotenv
 import requests
 from plotly.express import line
 
-API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 
-request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
+request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={ALPHAVANTAGE_API_KEY}"
 
 response = requests.get(request_url)
 
