@@ -3,7 +3,6 @@ print("Unemployment Report 2024")
 # IMPORTS
 
 # modules (don't need installation)
-import os 
 import json
 from pprint import pprint
 from statistics import mean
@@ -13,8 +12,9 @@ from dotenv import load_dotenv
 import requests
 from plotly.express import line
 
+from app.alpha import API_KEY 
 
-request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={ALPHAVANTAGE_API_KEY}"
+request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
 
 response = requests.get(request_url)
 
