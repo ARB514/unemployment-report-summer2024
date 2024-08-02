@@ -1,4 +1,7 @@
+# pip install -r requirements.txt
+
 requests
 plotly
 python-dotenv
 pandas
+pytest
